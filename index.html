@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dead Island Generator</title>
+        <link type="text/css" rel="stylesheet" href="./style/index.css">
+        <link type="text/css" rel="stylesheet" href="./style/tooltip.css">
+    </head>
+
+    <body>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <center>
+            <div class="tooltip" id="weapon-container">
+                <!--<img src="./res/weapons/machete.png" height=100 width=50>-->
+                <div id="weapon">
+                    <span id="weapon-prefix"></span>
+                    <span id="weapon-name"></span>
+                </div>
+                <span class="tooltip-text">
+                    Weapon type: <span id="weapon-type"></span>
+                </span>
+            </div>
+        </center>
+
+        <script type="text/javascript" src="./src/index.js"></script>
+        <script type="text/javascript">
+            // Please delete this script and all of its dependencies when a font
+            // license has been purchased!
+            let displayChanges = [
+                [new RegExp("'", 'g'), ""]
+            ];
+            function formatForDisplay(str) {
+                for (let change of displayChanges) {
+                    str = str.replace(change[0], change[1]);
+                }
+                return str;
+            }
+        </script>
+    </body>
+</html>

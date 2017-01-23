@@ -1,0 +1,99 @@
+var weapons = [
+    "Baseball Bat", "Diving Knife", "Hanbo", "Military Knife", "Wakazashi"
+];
+
+class WeaponClass {
+
+    constructor(name, colour, affixes, items) {
+        this.name = name;
+        this.colour = colour;
+        this.affixes = affixes;
+
+        this.weapons = (items? items : weapons);
+    }
+
+    getRandomAffix() {
+        return this.affixes[Math.floor(Math.random() * this.affixes.length)];
+    }
+
+    getRandomItem() {
+        return this.weapons[Math.floor(Math.random() * this.weapons.length)];
+    }
+
+}
+
+class Weapon {
+
+    constructor() {
+        this.weaponClass = randomWeaponClass();
+        this.affix = this.weaponClass.getRandomAffix();
+        this.name = this.weaponClass.getRandomItem();
+    }
+
+}
+
+var classes = [
+    new WeaponClass(
+            "Common",
+            [255, 255, 255],
+            [
+                "Debilitating", "Defective", "Feeble", "Flawed", "Flimsy", "Fragile", "Frail",
+                "Frightening", "Imprecise", "Languid", "Mediocre", "Medium-speed", "Ordinary",
+                "Puny", "Shoddy", "Short range", "Skewed", "Slow", "Sluggish", "Spiteful",
+                "Striking", "Threatening", "Tiring", "Unreliable", "Unwieldy", "Weak", "Worn"
+            ]
+        ),
+    new WeaponClass(
+            "Uncommon",
+            [49, 153, 42],
+            [
+                "Awe-inspiring", "Brisk", "Calibrated", "Damaging", "Dangerous", "Dependable",
+                "Disabling", "Formidable", "Malicious", "Quick", "Rapid", "Reliable", "Savage",
+                "Semi-accurate", "Swift", "Terrifying", "Used", "Well-balanced"
+            ]
+        ),
+    new WeaponClass(
+            "Rare",
+            [24, 81, 144],
+            [
+                "Accurate", "Crippling", "Cruel", "Deft", "Enervating", "Fast", "Precise",
+                "Shattering", "Slaughtering", "Speedy", "Stout", "Strong", "Sturdy", "Trusty",
+                "Vicious"
+            ]
+        ),
+    new WeaponClass(
+            "Unique",
+            [138, 54, 171],
+            ["Deadly", "Diabolical", "Lethal", "Paralyzing", "Tough"]
+        ),
+    new WeaponClass(
+            "Exceptional",
+            [166, 109, 28],
+            [""]
+        ),
+    new WeaponClass(
+            "Legendary",
+            [166, 109, 28],
+            [""],
+            [
+                // (Banisher, Bouncer's Pal, Master Chef, Pick of Destiny, and Tijuana Machete) are DI: Riptide only!
+                "Assassin's Greed", "Ban", "Banisher", "Blunt Speaker", "Bouncer's Pal", "Bushmaster",
+                "Crowd Pleaser", "Defender of the Motherland", "Eviscerator", "Gabriel's Sledgehammer",
+                "Home Run", "Italian Plumber", "M.C.", "Master Chef", "McCall's 9mm", "Pick of Destiny",
+                "Tijuana Machete", "Two Parter", "Viking of the South", "Zed's Dimise"
+            ]
+        )
+];
+
+var mods = [
+    "Shocking"
+];
+
+function randomWeaponClass() {
+    return classes[Math.floor(Math.random() * classes.length)];
+}
+
+function randomWeaponName() {
+    return weapons[Math.floor(Math.random() * weapons.length)];
+}
+

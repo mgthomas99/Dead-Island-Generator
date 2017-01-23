@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: "Dead Island";
+    src: url("./../res/Dead Island.ttf") format("truetype");
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* url: https://wallpaperscraft.com/image/dead_island_palms_waves_sunset_graphics_19825_2560x1024.jpg */
+    background-image: url("./../res/bg.png");
+    background-size: cover;
+}
+
+div[id="weapon-container"] > img {
+    float: left;
+}
+
+div[id="weapon-container"] {
+    -webkit-transform: rotate(-10deg);
+    background: black;
+    display: inline-block;
+    transform: rotate(-10deg);
+}
+
+div[id="weapon"] {
+    color: orange;
+    font-family: "Dead Island", sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+}

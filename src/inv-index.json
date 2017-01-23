@@ -1,0 +1,45 @@
+{
+    "classes": {
+        "common": {
+            "name": "Common",
+            "color": [255, 255, 255],
+            "prefixes":  [
+                    "Debilitating", "Defective", "Feeble", "Flawed", "Flimsy", "Fragile", "Frail",
+                    "Frightening", "Imprecise", "Languid", "Mediocre", "Medium-speed", "Ordinary",
+                    "Puny", "Shoddy", "Short range", "Skewed", "Slow", "Sluggish", "Spiteful",
+                    "Striking", "Threatening", "Tiring", "Unreliable", "Unwieldy", "Weak", "Worn"
+                ],
+            "chance": 75
+        },
+        "legendary": {
+            "name": "Legendary",
+            "color": [166, 109, 28],
+            "prefixes": [""],
+            "chance": 5
+        }
+    },
+
+    "types": {
+        "blunt": {
+            "name": "Blunt"
+        },
+        "sharp": {
+            "name": "Sharp"
+        }
+    },
+
+    "weapons": [
+        {
+            "name": "Assassin's Greed",
+            "type": "sharp",
+            "class": "legendary",
+            "games": ["Classic"]
+        },
+        {
+            "name": "Ban",
+            "type": "blunt",
+            "class": "legendary",
+            "games": ["Riptide"]
+        }
+    ]
+}

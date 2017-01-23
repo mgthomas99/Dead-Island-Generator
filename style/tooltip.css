@@ -1,0 +1,32 @@
+/*
+ * Implements tooltip text functionality.
+ * 
+ * <div class="tooltip">
+ *   Hover over me!
+ *   <span class="tooltip-text">This is a tooltip!</span>
+ * </div>
+ */
+
+.tooltip {
+    position: relative;
+    
+    border-bottom: 1px dotted black;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    padding: 5px 0;
+    width: 120px;
+    
+    background-color: rgb(55, 94, 49);
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
