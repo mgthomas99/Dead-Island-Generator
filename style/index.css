@@ -1,4 +1,8 @@
 
+/**
+ * Loads the Dead Island font from the local path. In the commercial version of this site, either use a different font or
+ * purchase a license to use the 'Dead Island.ttf' font. 
+ */
 @font-face {
     font-family: "Dead Island";
     src: url("./../res/Dead Island.ttf") format("truetype");
@@ -10,25 +14,11 @@ html {
 }
 
 body {
-    /* url: https://wallpaperscraft.com/image/dead_island_palms_waves_sunset_graphics_19825_2560x1024.jpg */
+    margin: 0;
+    padding: 0;
+
+    /* The url of the image is 'https://wallpaperscraft.com/image/dead_island_palms_waves_sunset_graphics_19825_2560x1024.jpg'.
+    The local version of the image is smaller in size and is used as it takes less time to download. */
     background-image: url("./../res/bg.png");
     background-size: cover;
-}
-
-div[id="weapon-container"] > img {
-    float: left;
-}
-
-div[id="weapon-container"] {
-    -webkit-transform: rotate(-10deg);
-    background: black;
-    display: inline-block;
-    transform: rotate(-10deg);
-}
-
-div[id="weapon"] {
-    color: orange;
-    font-family: "Dead Island", sans-serif;
-    font-size: 5em;
-    font-weight: bold;
 }

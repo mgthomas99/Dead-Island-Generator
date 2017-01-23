@@ -1,0 +1,30 @@
+
+#inventory {
+    height: 100%;
+    width: 50%;
+
+    background-color: rgba(0, 150, 0, 0.6);
+}
+
+#stats {
+    text-align: left;
+}
+
+#weapon span {
+    color: white;
+    font-family: "Dead Island", sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    user-select: none;
+}
+
+#weapon {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    margin-bottom: 5em;
+
+    background-image: url("./../res/board.png");
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+}

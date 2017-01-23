@@ -2,39 +2,61 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="application-name" content="Dead Island Generator">
+        <meta name="description" content="Dead Island Weapon Generator!">
+        <meta name="keywords" content="Dead Island,Riptide,Generator,Weapon">
+        <meta name="author" value="George Thomas">
+        <meta name="viewport" value="width=device-width, initial-scale=1.0">
         <title>Dead Island Generator</title>
         <link type="text/css" rel="stylesheet" href="./style/index.css">
+        <link type="text/css" rel="stylesheet" href="./style/inventory.css">
         <link type="text/css" rel="stylesheet" href="./style/tooltip.css">
     </head>
 
     <body>
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <center>
-            <div class="tooltip" id="weapon-container">
-                <!--<img src="./res/weapons/machete.png" height=100 width=50>-->
+            <div id="inventory">
                 <div id="weapon">
                     <span id="weapon-prefix"></span>
                     <span id="weapon-name"></span>
                 </div>
-                <span class="tooltip-text">
-                    Weapon type: <span id="weapon-type"></span>
-                </span>
+                <div id="items"></div>
+                <div id="stats">
+                    <span id="weapon-type"></span>
+                </div>
             </div>
         </center>
 
+        <script type="text/javascript" src="./src/util.js"></script>
         <script type="text/javascript" src="./src/index.js"></script>
         <script type="text/javascript">
-            // Please delete this script and all of its dependencies when a font
-            // license has been purchased!
             let displayChanges = [
                 [new RegExp("'", 'g'), ""]
             ];
-            function formatForDisplay(str) {
-                for (let change of displayChanges) {
-                    str = str.replace(change[0], change[1]);
+            var outputs = [
+                ["weapon_name", "weapon-name"],
+                ["weapon_prefix", "weapon-prefix"],
+                ["weapon_type", "weapon-type"]
+            ];
+            
+            function append(type, str) {
+                for (let output of outputs) {
+                    if (output[0] === type) {
+                        for (let change of displayChanges) {
+                            str = str.replace(change[0], change[1]);
+                        }
+                        output[1].innerHTML = str;
+                        break;
+                    }
                 }
-                return str;
             }
+
+            (function() {
+                for (let i = 0; i < outputs.length; i++) {
+                    outputs[i][1] = document.getElementById(outputs[i][1]);
+                }
+            })();
         </script>
     </body>
 </html>

@@ -11,10 +11,42 @@
                 ],
             "chance": 75
         },
+        "uncommon": {
+            "name": "Uncommon",
+            "color": [49, 153, 42],
+            "prefixes": [
+                "Awe-inspiring", "Brisk", "Calibrated", "Damaging", "Dangerous", "Dependable",
+                "Disabling", "Formidable", "Malicious", "Quick", "Rapid", "Reliable", "Savage",
+                "Semi-accurate", "Swift", "Terrifying", "Used", "Well-balanced"
+            ],
+            "chance": 50
+        },
+        "rare": {
+            "name": "Rare",
+            "color": [24, 81, 144],
+            "prefixes": [
+                "Accurate", "Crippling", "Cruel", "Deft", "Enervating", "Fast", "Precise",
+                "Shattering", "Slaughtering", "Speedy", "Stout", "Strong", "Sturdy", "Trusty",
+                "Vicious"
+            ],
+            "chance": 50
+        },
+        "exceptional": {
+            "name": "Exceptional",
+            "color": [166, 109, 28],
+            "prefixes": [""],
+            "chance": 15
+        },
         "legendary": {
             "name": "Legendary",
             "color": [166, 109, 28],
             "prefixes": [""],
+            "chance": 5
+        },
+        "unique": {
+            "name": "Unique",
+            "color": [138, 54, 171],
+            "prefixes": ["Deadly", "Diabolical", "Lethal", "Paralyzing", "Tough"],
             "chance": 5
         }
     },
@@ -32,13 +64,13 @@
         {
             "name": "Assassin's Greed",
             "type": "sharp",
-            "class": "legendary",
+            "classes": ["legendary"],
             "games": ["Classic"]
         },
         {
             "name": "Ban",
             "type": "blunt",
-            "class": "legendary",
+            "classes": ["legendary"],
             "games": ["Riptide"]
         }
     ]
