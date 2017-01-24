@@ -9,7 +9,17 @@
                     "Puny", "Shoddy", "Short range", "Skewed", "Slow", "Sluggish", "Spiteful",
                     "Striking", "Threatening", "Tiring", "Unreliable", "Unwieldy", "Weak", "Worn"
                 ],
-            "chance": 75
+            "chance": {
+                "default": 92,
+                "lockpick1": 0,
+                "lockpick2": 0,
+                "lockpick3": 0,
+                "butcher": 0,
+                "floater": 30,
+                "ram": 0,
+                "suicider": 70,
+                "thug": 30
+            }
         },
         "uncommon": {
             "name": "Uncommon",
@@ -19,7 +29,17 @@
                 "Disabling", "Formidable", "Malicious", "Quick", "Rapid", "Reliable", "Savage",
                 "Semi-accurate", "Swift", "Terrifying", "Used", "Well-balanced"
             ],
-            "chance": 50
+            "chance": {
+                "default": 5,
+                "lockpick1": 92,
+                "lockpick2": 85,
+                "lockpick3": 77,
+                "butcher": 10,
+                "floater": 20,
+                "ram": 10,
+                "suicider": 20,
+                "thug": 20
+            }
         },
         "rare": {
             "name": "Rare",
@@ -29,41 +49,165 @@
                 "Shattering", "Slaughtering", "Speedy", "Stout", "Strong", "Sturdy", "Trusty",
                 "Vicious"
             ],
-            "chance": 50
+            "chance": {
+                "default": 2,
+                "lockpick1": 4,
+                "lockpick2": 10,
+                "lockpick3": 15,
+                "butcher": 30,
+                "floater": 40,
+                "ram": 30,
+                "suicider": 5,
+                "thug": 40
+            }
         },
         "exceptional": {
             "name": "Exceptional",
             "color": [166, 109, 28],
             "prefixes": [""],
-            "chance": 15
+            "chance": {
+                "default": 0,
+                "lockpick1": 1,
+                "lockpick2": 1,
+                "lockpick3": 2,
+                "butcher": 10,
+                "floater": 0,
+                "ram": 10,
+                "suicider": 0,
+                "thug": 0
+            }
         },
         "legendary": {
             "name": "Legendary",
             "color": [166, 109, 28],
             "prefixes": [""],
-            "chance": 5
+            "chance": {
+                "default": 0,
+                "lockpick1": 1,
+                "lockpick2": 1,
+                "lockpick3": 2,
+                "butcher": 10,
+                "floater": 0,
+                "ram": 10,
+                "suicider": 0,
+                "thug": 0
+            }
         },
         "unique": {
             "name": "Unique",
             "color": [138, 54, 171],
             "prefixes": ["Deadly", "Diabolical", "Lethal", "Paralyzing", "Tough"],
-            "chance": 5
+            "chance": {
+                "default": 1,
+                "lockpick1": 2,
+                "lockpick2": 4,
+                "lockpick3": 6,
+                "butcher": 50,
+                "floater": 10,
+                "ram": 50,
+                "suicider": 5,
+                "thug": 10
+            }
         }
     },
 
     "types": {
         "blunt": {
-            "name": "Blunt"
+            "name": "Blunt",
+            "prefixes": {
+                "common": [""],
+                "uncommon": [""],
+                "rare": [""],
+                "exceptional": [""],
+                "legendary": [""],
+                "unique": [""]
+            }
         },
         "firearm": {
-            "name": "firearm"
+            "name": "Firearm",
+            "prefixes": {
+                "common": [""],
+                "uncommon": [""],
+                "rare": [""],
+                "exceptional": [""],
+                "legendary": [""],
+                "unique": [""]
+            }
         },
         "sharp": {
-            "name": "Sharp"
+            "name": "Sharp",
+            "prefixes": {
+                "common": [""],
+                "uncommon": [""],
+                "rare": [""],
+                "exceptional": [""],
+                "legendary": [""],
+                "unique": [""]
+            }
         }
     },
 
     "weapons": [
+        {
+            "name": "Bolo Machete",
+            "type": "sharp",
+            "classes": ["common", "uncommon"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Diving Knife",
+            "type": "sharp",
+            "classes": ["common", "uncommon"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Homemade Knife",
+            "type": "sharp",
+            "classes": ["common", "uncommon"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Homemade Machete",
+            "type": "sharp",
+            "classes": ["uncommon", "rare"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Kitchen Knife",
+            "type": "sharp",
+            "classes": ["common", "uncommon"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Knife",
+            "type": "sharp",
+            "classes": ["common", "uncommon"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Kukri Machete",
+            "type": "sharp",
+            "classes": ["uncommon", "rare"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Military Knife",
+            "type": "sharp",
+            "classes": ["uncommon", "rare"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Military Machete",
+            "type": "sharp",
+            "classes": ["uncommon", "rare"],
+            "games": ["Classic", "Riptide"]
+        },
+        {
+            "name": "Wicked Knife",
+            "type": "sharp",
+            "classes": ["uncommon", "rare"],
+            "games": ["Classic", "Riptide"]
+        },
         {
             "name": "Assassin's Greed",
             "type": "sharp",

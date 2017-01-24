@@ -6,7 +6,7 @@ class Weapon {
             let weapon = ArrayUtils.randomElement(inv.weapons);
             let weapon_class = inv.classes[ArrayUtils.randomElement(weapon.classes)];
 
-            if (Math.random() * 100 <= weapon_class.chance) {
+            if (Math.random() * 100 <= weapon_class.chance.default) {
                 let w_prefix = ArrayUtils.randomElement(weapon_class.prefixes);
                 return new Weapon(
                     w_prefix,
@@ -30,8 +30,12 @@ class Weapon {
 var inv;
 
 function create() {
+    let li = document.createElement("li");
     let weapon = Weapon.random();
 
+    li.style.setProperty("color", weapon.clas.color);
+    li.innerHTML = weapon.name;
+    document.getElementById("weapons").appendChild(li);
     attrib("weapon_name", weapon.name);
     attrib("weapon_prefix", weapon.prefix);
     attrib("weapon_type", weapon.type);

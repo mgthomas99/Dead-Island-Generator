@@ -17,12 +17,17 @@
     <body>
         <div class="center" id="inventory">
             <center>
-                <div class="center" id="weapon">
+                <div id="weapon">
                     <span id="weapon-prefix"></span>
                     <span id="weapon-name"></span>
                 </div>
             </center>
-            <div id="items"></div>
+            <div id="items">
+                <ul id="weapons">
+                    <li>Cleaver</li>
+                    <li>Knife</li>
+                </ul>
+            </div>
             <div class="stats" id="stats">
                 <span class="weapon-stat">
                     <span class="weapon-stat-property">Weapon Type</span>
@@ -31,8 +36,6 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="./src/util.js"></script>
-        <script type="text/javascript" src="./src/index.js"></script>
         <script type="text/javascript">
             var attributes = {
                 "weapon_name"  : (val) => document.getElementById("weapon-name").innerHTML = val,
@@ -59,5 +62,7 @@
                 attributes[attr](val);
             }
         </script>
+        <script type="text/javascript" src="./src/util.js"></script>
+        <script type="text/javascript" src="./src/index.js"></script>
     </body>
 </html>

@@ -1,4 +1,8 @@
 
+.loot-container {
+    cursor: pointer;
+}
+
 .stats {
     width: 100%;
 
@@ -28,15 +32,22 @@
 #inventory {
     height: 100%;
     width: 40%;
-    margin-top: 5%;
+    margin-top: 1em;
 
     background-color: rgba(0, 130, 0, 0.75);
+}
+
+#weapons {
+    margin-top: 1em;
+    height: 200px;
+    width: 90%;
+
+    overflow-y: auto;
 }
 
 #weapon {
     -webkit-transform: rotate(-7.5deg);
     transform: rotate(-7.5deg);
-    margin-bottom: 1em;
 
     background-image: url("./../res/board.png");
     background-size: cover;
