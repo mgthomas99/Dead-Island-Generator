@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
     <head>
         <meta charset="utf-8">
         <meta name="application-name" content="Dead Island Generator">
@@ -8,60 +8,40 @@
         <meta name="author" value="George Thomas">
         <meta name="viewport" value="width=device-width, initial-scale=1.0">
         <title>Dead Island Generator</title>
-        <link type="text/css" rel="stylesheet" href="./style/index.css">
-        <link type="text/css" rel="stylesheet" href="./style/inventory.css">
+        <link rel="shortcut icon" href="./favicon.ico">
+        <link type="text/css" rel="stylesheet" href="./dist/style/index.css">
+        <link type="text/css" rel="stylesheet" href="./dist/style/inventory.css">
         <link type="text/css" rel="stylesheet" href="./style/tooltip.css">
         <link type="text/css" rel="stylesheet" href="./style/util.css">
     </head>
 
     <body>
-        <div class="center" id="inventory">
-            <center>
-                <div id="weapon">
-                    <span id="weapon-prefix"></span>
-                    <span id="weapon-name"></span>
+        <center>
+            <div class="inventory" id="inventory">
+                <center>
+                    <div id="weapon">
+                        <span id="weapon-prefix"></span>
+                        <span id="weapon-name"></span>
+                    </div>
+                </center>
+                <!--<div class="weapons" id="weapons">
+                    <span>Cleaver</span>
+                    <span>Knife</span>
+                </div>-->
+                <li class="weapons" id="weapons">
+                    <!--<span class="weapon">Machete</span>
+                    <span class="weapon-">100 Damage</span>-->
+                </li>
+                <div class="stats" id="stats">
+                    <span class="weapon-stat">
+                        <span class="weapon-stat-property">Weapon Type</span>
+                        <span class="weapon-stat-value" id="weapon-type"></span>
+                    </span>
                 </div>
-            </center>
-            <div id="items">
-                <ul id="weapons">
-                    <li>Cleaver</li>
-                    <li>Knife</li>
-                </ul>
             </div>
-            <div class="stats" id="stats">
-                <span class="weapon-stat">
-                    <span class="weapon-stat-property">Weapon Type</span>
-                    <span class="weapon-stat-value" id="weapon-type"></span>
-                </span>
-            </div>
-        </div>
+        </center>
 
-        <script type="text/javascript">
-            var attributes = {
-                "weapon_name"  : (val) => document.getElementById("weapon-name").innerHTML = val,
-                "weapon_prefix": (val) => document.getElementById("weapon-prefix").innerHTML = val,
-                "weapon_type"  : (val) => document.getElementById("weapon-type").innerHTML = val,
-
-                "weapon_color": (val) => document.getElementById("weapon").style.setProperty("color", `rgb(${val[0]}, ${val[1]}, ${val[2]})`)
-            };
-
-            function attrib(attr, val) {
-                // Remove this replacement line when a font license has been purchased.
-                if (typeof(val) === "string") {
-                    val = val.replace(new RegExp("'", 'g'), "")
-                             .replace(new RegExp("1", 'g'), "One ")
-                             .replace(new RegExp("2", 'g'), "Two ")
-                             .replace(new RegExp("3", 'g'), "Three ")
-                             .replace(new RegExp("4", 'g'), "Four ")
-                             .replace(new RegExp("5", 'g'), "Five ")
-                             .replace(new RegExp("6", 'g'), "Six ")
-                             .replace(new RegExp("7", 'g'), "Seven ")
-                             .replace(new RegExp("8", 'g'), "Eight ")
-                             .replace(new RegExp("9", 'g'), "Nine ")
-                };
-                attributes[attr](val);
-            }
-        </script>
+        <script type="text/javascript" src="./src/element-hook.js"></script>
         <script type="text/javascript" src="./src/util.js"></script>
         <script type="text/javascript" src="./src/index.js"></script>
     </body>

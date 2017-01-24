@@ -30,16 +30,13 @@ class Weapon {
 var inv;
 
 function create() {
-    let li = document.createElement("li");
     let weapon = Weapon.random();
 
-    li.style.setProperty("color", weapon.clas.color);
-    li.innerHTML = weapon.name;
-    document.getElementById("weapons").appendChild(li);
     attrib("weapon_name", weapon.name);
     attrib("weapon_prefix", weapon.prefix);
     attrib("weapon_type", weapon.type);
     attrib("weapon_color", weapon.clas.color);
+    appendWeapon(weapon);
 }
 
 (function() {

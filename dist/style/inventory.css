@@ -1,0 +1,37 @@
+.inventory {
+  height: 100%;
+  width: 40%;
+  margin-top: 100px;
+  position: relative;
+  background: rgba(0, 130, 0, 0.75);
+  background: -webkit-linear-gradient(left, rgba(0, 130, 0, 0.1), rgba(0, 130, 0, 0.75), rgba(0, 130, 0, 0.1));
+  background: -moz-linear-gradient(left, rgba(0, 130, 0, 0.1), rgba(0, 130, 0, 0.75), rgba(0, 130, 0, 0.1));
+  background: -o-linear-gradient(left, rgba(0, 130, 0, 0.1), rgba(0, 130, 0, 0.75), rgba(0, 130, 0, 0.1));
+  background: linear-gradient(left, rgba(0, 130, 0, 0.1), rgba(0, 130, 0, 0.75), rgba(0, 130, 0, 0.1));
+  border-color: rgba(0, 130, 0, 0.75);
+  border-style: groove;
+  border-width: 1px 0px 1px 0px; }
+  .inventory #weapon {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    background-image: url("./../../res/board.png");
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Dead Island", sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 10px 10px black;
+    user-select: none; }
+  .inventory .weapons {
+    max-height: 100px;
+    width: 90%;
+    margin-top: 10%;
+    list-style-type: none;
+    overflow-y: auto; }
+    .inventory .weapons .weapon {
+      color: white;
+      font-family: "Impact", sans-serif;
+      font-size: 1em;
+      font-weight: lighter;
+      text-align: left; }

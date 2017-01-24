@@ -1,0 +1,53 @@
+$url-board : url("./../../res/board.png");
+$inv-bg-color-border : rgba(0, 130, 0, 0.1);
+$inv-bg-color : rgba(0, 130, 0, 0.75);
+$text-shadow : 10px;
+$text-slant : -5deg;
+
+.inventory {
+    height: 100%;
+    width: 40%;
+    margin-top: 100px;
+    position: relative;
+
+    background: rgba(0, 130, 0, 0.75);
+    background: -webkit-linear-gradient(left, $inv-bg-color-border, $inv-bg-color, $inv-bg-color-border);
+    background: -moz-linear-gradient(left, $inv-bg-color-border, $inv-bg-color, $inv-bg-color-border);
+    background: -o-linear-gradient(left, $inv-bg-color-border, $inv-bg-color, $inv-bg-color-border);
+    background: linear-gradient(left, $inv-bg-color-border, $inv-bg-color, $inv-bg-color-border);
+    border-color: $inv-bg-color;
+    border-style: groove;
+    border-width: 1px 0px 1px 0px;
+
+    #weapon {
+        -webkit-transform: rotate($text-slant);
+        transform: rotate($text-slant);
+
+        background-image: $url-board;
+        background-size: cover;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Dead Island", sans-serif;
+        font-size: 4em;
+        font-weight: bold;
+        text-shadow: $text-shadow $text-shadow black;
+        user-select: none;
+    }
+
+    .weapons {
+        max-height: 100px;
+        width: 90%;
+        margin-top: 10%;
+
+        list-style-type: none;
+        overflow-y: auto;
+        
+        .weapon {
+            color: white;
+            font-family: "Impact", sans-serif;
+            font-size: 1em;
+            font-weight: lighter;
+            text-align: left;
+        }
+    }
+}
