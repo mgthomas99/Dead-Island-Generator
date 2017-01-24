@@ -34,10 +34,6 @@
         <script type="text/javascript" src="./src/util.js"></script>
         <script type="text/javascript" src="./src/index.js"></script>
         <script type="text/javascript">
-            var attribs = [
-                "weapon-prefix-colour", (e) => {  }
-            ];
-
             var attributes = {
                 "weapon_name"  : (val) => document.getElementById("weapon-name").innerHTML = val,
                 "weapon_prefix": (val) => document.getElementById("weapon-prefix").innerHTML = val,
@@ -47,6 +43,7 @@
             };
 
             function attrib(attr, val) {
+                // Remove this replacement line when a font license has been purchased.
                 if (typeof(val) === "string") {
                     val = val.replace(new RegExp("'", 'g'), "")
                              .replace(new RegExp("1", 'g'), "One ")
