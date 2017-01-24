@@ -11,52 +11,56 @@
         <link type="text/css" rel="stylesheet" href="./style/index.css">
         <link type="text/css" rel="stylesheet" href="./style/inventory.css">
         <link type="text/css" rel="stylesheet" href="./style/tooltip.css">
+        <link type="text/css" rel="stylesheet" href="./style/util.css">
     </head>
 
     <body>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <center>
-            <div id="inventory">
-                <div id="weapon">
+        <div class="center" id="inventory">
+            <center>
+                <div class="center" id="weapon">
                     <span id="weapon-prefix"></span>
                     <span id="weapon-name"></span>
                 </div>
-                <div id="items"></div>
-                <div id="stats">
-                    <span id="weapon-type"></span>
-                </div>
+            </center>
+            <div id="items"></div>
+            <div class="stats" id="stats">
+                <span class="weapon-stat">
+                    <span class="weapon-stat-property">Weapon Type</span>
+                    <span class="weapon-stat-value" id="weapon-type"></span>
+                </span>
             </div>
-        </center>
+        </div>
 
         <script type="text/javascript" src="./src/util.js"></script>
         <script type="text/javascript" src="./src/index.js"></script>
         <script type="text/javascript">
-            let displayChanges = [
-                [new RegExp("'", 'g'), ""]
+            var attribs = [
+                "weapon-prefix-colour", (e) => {  }
             ];
-            var outputs = [
-                ["weapon_name", "weapon-name"],
-                ["weapon_prefix", "weapon-prefix"],
-                ["weapon_type", "weapon-type"]
-            ];
-            
-            function append(type, str) {
-                for (let output of outputs) {
-                    if (output[0] === type) {
-                        for (let change of displayChanges) {
-                            str = str.replace(change[0], change[1]);
-                        }
-                        output[1].innerHTML = str;
-                        break;
-                    }
-                }
-            }
 
-            (function() {
-                for (let i = 0; i < outputs.length; i++) {
-                    outputs[i][1] = document.getElementById(outputs[i][1]);
-                }
-            })();
+            var attributes = {
+                "weapon_name"  : (val) => document.getElementById("weapon-name").innerHTML = val,
+                "weapon_prefix": (val) => document.getElementById("weapon-prefix").innerHTML = val,
+                "weapon_type"  : (val) => document.getElementById("weapon-type").innerHTML = val,
+
+                "weapon_color": (val) => document.getElementById("weapon").style.setProperty("color", `rgb(${val[0]}, ${val[1]}, ${val[2]})`)
+            };
+
+            function attrib(attr, val) {
+                if (typeof(val) === "string") {
+                    val = val.replace(new RegExp("'", 'g'), "")
+                             .replace(new RegExp("1", 'g'), "One ")
+                             .replace(new RegExp("2", 'g'), "Two ")
+                             .replace(new RegExp("3", 'g'), "Three ")
+                             .replace(new RegExp("4", 'g'), "Four ")
+                             .replace(new RegExp("5", 'g'), "Five ")
+                             .replace(new RegExp("6", 'g'), "Six ")
+                             .replace(new RegExp("7", 'g'), "Seven ")
+                             .replace(new RegExp("8", 'g'), "Eight ")
+                             .replace(new RegExp("9", 'g'), "Nine ")
+                };
+                attributes[attr](val);
+            }
         </script>
     </body>
 </html>

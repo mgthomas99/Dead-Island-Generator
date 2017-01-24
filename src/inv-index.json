@@ -55,6 +55,9 @@
         "blunt": {
             "name": "Blunt"
         },
+        "firearm": {
+            "name": "firearm"
+        },
         "sharp": {
             "name": "Sharp"
         }
@@ -72,6 +75,114 @@
             "type": "blunt",
             "classes": ["legendary"],
             "games": ["Riptide"]
+        },
+        {
+            "name": "Banisher",
+            "type": "sharp",
+            "classes": ["legendary"],
+            "games": ["Riptide"]
+        },
+        {
+            "name": "Blunt Speaker",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Bouncer's Pal",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Riptide"]
+        },
+        {
+            "name": "Bushmaster",
+            "type": "sharp",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Crowd Pleaser",
+            "type": "firearm",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Defender of the Motherland",
+            "type": "firearm",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Eviscerator",
+            "type": "sharp",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Gabriel's Sledgehammer",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Home Run",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Italian Plumber",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "M.C.",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Master Chef",
+            "type": "sharp",
+            "classes": ["legendary"],
+            "games": ["Riptide"]
+        },
+        {
+            "name": "McCall's 9mm",
+            "type": "firearm",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Pick of Destiny",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Riptide"]
+        },
+        {
+            "name": "Tijuana Machete",
+            "type": "sharp",
+            "classes": ["legendary"],
+            "games": ["Riptide"]
+        },
+        {
+            "name": "Two Parter",
+            "type": "blunt",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Viking of the South",
+            "type": "sharp",
+            "classes": ["legendary"],
+            "games": ["Classic"]
+        },
+        {
+            "name": "Zed's Dimise",
+            "type": "sharp",
+            "classes": ["legendary"],
+            "games": ["Classic"]
         }
     ]
 }
