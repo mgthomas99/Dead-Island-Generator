@@ -35,10 +35,10 @@
     font-weight: lighter; }
     .inventory .stats img {
       float: left; }
-    .inventory .stats .weapon-level {
+    .inventory .stats .header-stat-left {
       float: left;
       text-align: left; }
-    .inventory .stats .weapon-value {
+    .inventory .stats .header-stat-right {
       text-align: right; }
     .inventory .stats .weapon-stats {
       background: rgba(0, 0, 0, 0.15);
