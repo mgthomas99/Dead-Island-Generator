@@ -1,6 +1,19 @@
+#weapon {
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  background-image: url("./../../res/board.png");
+  background-size: cover;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Dead Island", sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 10px 10px black;
+  user-select: none; }
+
 .inventory {
   height: 100%;
-  width: 40%;
+  width: 45%;
   margin-top: 100px;
   position: relative;
   background: rgba(0, 130, 0, 0.75);
@@ -11,18 +24,24 @@
   border-color: rgba(0, 130, 0, 0.75);
   border-style: groove;
   border-width: 1px 0px 1px 0px; }
-  .inventory #weapon {
-    -webkit-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    background-image: url("./../../res/board.png");
-    background-size: cover;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Dead Island", sans-serif;
-    font-size: 4em;
-    font-weight: bold;
-    text-shadow: 10px 10px black;
-    user-select: none; }
+  .inventory .statbox-separator {
+    margin-bottom: 4%;
+    margin-top: 4%; }
+  .inventory .stats {
+    color: white;
+    font-family: "Impact", sans-serif;
+    font-size: 1.25em;
+    font-weight: lighter; }
+    .inventory .stats img {
+      float: left; }
+    .inventory .stats .stat {
+      width: 90%; }
+      .inventory .stats .stat .stat-name {
+        color: white;
+        text-align: left; }
+      .inventory .stats .stat .stat-value {
+        color: #F1FF24;
+        text-align: right; }
   .inventory .weapons {
     max-height: 100px;
     width: 90%;
@@ -30,8 +49,10 @@
     list-style-type: none;
     overflow-y: auto; }
     .inventory .weapons .weapon {
+      background-color: rgba(0, 0, 0, 0.5);
       color: white;
       font-family: "Impact", sans-serif;
-      font-size: 1em;
+      font-size: 1.25em;
       font-weight: lighter;
-      text-align: left; }
+      text-align: left;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.5); }

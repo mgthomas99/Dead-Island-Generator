@@ -25,17 +25,22 @@ class Weapon {
         this.type = type;
     }
 
+    bind() {
+        bind("weapon-level", Math.floor(Math.random() * inv.games[game]["level-cap"]));
+        bind("weapon-name", this.name);
+        bind("weapon-prefix", this.prefix);
+        bind("weapon-type", this.type);
+        attrib("weapon-color", "color", this.clas.color);
+    }
+
 }
 
+var game = "classic";
 var inv;
 
 function create() {
     let weapon = Weapon.random();
-
-    attrib("weapon_name", weapon.name);
-    attrib("weapon_prefix", weapon.prefix);
-    attrib("weapon_type", weapon.type);
-    attrib("weapon_color", weapon.clas.color);
+    weapon.bind();
     appendWeapon(weapon);
 }
 

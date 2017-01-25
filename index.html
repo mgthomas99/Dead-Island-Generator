@@ -11,32 +11,32 @@
         <link rel="shortcut icon" href="./favicon.ico">
         <link type="text/css" rel="stylesheet" href="./dist/style/index.css">
         <link type="text/css" rel="stylesheet" href="./dist/style/inventory.css">
-        <link type="text/css" rel="stylesheet" href="./style/tooltip.css">
-        <link type="text/css" rel="stylesheet" href="./style/util.css">
+        <link type="text/css" rel="stylesheet" href="./dist/style/tooltip.css">
+        <link type="text/css" rel="stylesheet" href="./dist/style/util.css">
     </head>
 
     <body>
         <center>
             <div class="inventory" id="inventory">
                 <center>
-                    <div id="weapon">
-                        <span id="weapon-prefix"></span>
-                        <span id="weapon-name"></span>
+                    <div class="attrib-weapon-color" id="weapon">
+                        <span class="value-weapon-prefix" id="weapon-prefix"></span>
+                        <span class="value-weapon-name" id="weapon-name"></span>
                     </div>
                 </center>
-                <!--<div class="weapons" id="weapons">
-                    <span>Cleaver</span>
-                    <span>Knife</span>
-                </div>-->
-                <li class="weapons" id="weapons">
-                    <!--<span class="weapon">Machete</span>
-                    <span class="weapon-">100 Damage</span>-->
-                </li>
-                <div class="stats" id="stats">
-                    <span class="weapon-stat">
-                        <span class="weapon-stat-property">Weapon Type</span>
-                        <span class="weapon-stat-value" id="weapon-type"></span>
-                    </span>
+                <div class="statbox-separator"></div>
+                <li class="weapons" id="weapons"></li>
+                <div class="statbox-separator"></div>
+                <div>
+                    <div class="stats" id="stats">
+                        <span class="stat">
+                            <span class="stat-name">Required level: </span>
+                            <span class="value-weapon-level stat-value">50</span>
+                        </span>
+                        <span class="stat">
+
+                        </span>
+                    </div>
                 </div>
             </div>
         </center>

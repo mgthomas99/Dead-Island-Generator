@@ -1,8 +1,18 @@
 {
+    "games": {
+        "classic": {
+            "name": "Dead Island",
+            "level-cap": 60
+        },
+        "riptide": {
+            "name": "Dead Island: Riptide",
+            "level-cap": 70
+        }
+    },
     "classes": {
         "common": {
             "name": "Common",
-            "color": [255, 255, 255],
+            "color": "#FFFFFF",
             "prefixes":  [
                     "Debilitating", "Defective", "Feeble", "Flawed", "Flimsy", "Fragile", "Frail",
                     "Frightening", "Imprecise", "Languid", "Mediocre", "Medium-speed", "Ordinary",
@@ -23,7 +33,7 @@
         },
         "uncommon": {
             "name": "Uncommon",
-            "color": [49, 153, 42],
+            "color": "#31992A",
             "prefixes": [
                 "Awe-inspiring", "Brisk", "Calibrated", "Damaging", "Dangerous", "Dependable",
                 "Disabling", "Formidable", "Malicious", "Quick", "Rapid", "Reliable", "Savage",
@@ -43,7 +53,7 @@
         },
         "rare": {
             "name": "Rare",
-            "color": [24, 81, 144],
+            "color": "#185190",
             "prefixes": [
                 "Accurate", "Crippling", "Cruel", "Deft", "Enervating", "Fast", "Precise",
                 "Shattering", "Slaughtering", "Speedy", "Stout", "Strong", "Sturdy", "Trusty",
@@ -63,7 +73,7 @@
         },
         "exceptional": {
             "name": "Exceptional",
-            "color": [166, 109, 28],
+            "color": "#A66D1C",
             "prefixes": [""],
             "chance": {
                 "default": 0,
@@ -79,7 +89,7 @@
         },
         "legendary": {
             "name": "Legendary",
-            "color": [166, 109, 28],
+            "color": "#A66D1C",
             "prefixes": [""],
             "chance": {
                 "default": 0,
@@ -95,7 +105,7 @@
         },
         "unique": {
             "name": "Unique",
-            "color": [138, 54, 171],
+            "color": "#8A36AB",
             "prefixes": ["Deadly", "Diabolical", "Lethal", "Paralyzing", "Tough"],
             "chance": {
                 "default": 1,
