@@ -22,6 +22,7 @@ $text-slant : -5deg;
     height: 100%;
     width: 45%;
     margin-top: 100px;
+    padding: 0 5% 0 5%;
     position: relative;
 
     background: rgba(0, 130, 0, 0.75);
@@ -48,31 +49,54 @@ $text-slant : -5deg;
             float: left;
         }
 
+        .weapon-level {
+            float: left;
+            text-align: left;
+        }
+
+        .weapon-value {
+            text-align: right;
+        }
+
+        .weapon-stats {
+            background: rgba(0, 0, 0, 0.15);
+            background: -webkit-radial-gradient(rbga(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
+            background: -moz-radial-gradient(rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
+            background: -o-radial-gradient(rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
+            background: radial-gradient(rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
+        }
+
         .stat {
-            width: 90%;
+            width: 100%;
+            text-shadow: 2px 2px black;
             
             .stat-name {
+                margin-right: 0.5em;
                 color: white;
                 text-align: left;
             }
 
             .stat-value {
                 color: #F1FF24;
+                font-size: 0.95em;
                 text-align: right;
             }
         }
     }
 
     .weapons {
+        height: 100px;
         max-height: 100px;
-        width: 90%;
+        width: 100%;
         margin-top: 10%;
 
+        border-color: black; 
         list-style-type: none;
+        overflow-x: hidden;
         overflow-y: auto;
         
         .weapon {
-            background-color: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.5);
             color: white;
             font-family: "Impact", sans-serif;
             font-size: 1.25em;

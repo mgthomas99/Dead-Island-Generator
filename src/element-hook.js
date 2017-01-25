@@ -16,7 +16,6 @@ let prev;
 function appendWeapon(weapon) {
     let span = document.createElement("li");
     span.classList.add("weapon");
-    span.style.setProperty("color", `rgb(${weapon.clas.color[0]}, ${weapon.clas.color[1]}, ${weapon.clas.color[2]})`);
     span.innerHTML = weapon.prefix + " " + weapon.name;
 
     if (prev == null) {

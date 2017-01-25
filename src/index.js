@@ -40,8 +40,8 @@ var inv;
 
 function create() {
     let weapon = Weapon.random();
-    weapon.bind();
     appendWeapon(weapon);
+    weapon.bind();
 }
 
 (function() {
