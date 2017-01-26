@@ -11,7 +11,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "concurrently \"node-sass src/**/* -o dist\" \"tsc\"",
-    "di-c": "http-server \"./\" -a 192.168.1.57 -p 8080"
+    "di-c": "http-server \"./\" -a 0.0.0.0 -p 8080"
   },
   "devDependencies": {
     "concurrently": "^3.1.0",

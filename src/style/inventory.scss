@@ -45,8 +45,23 @@ $text-slant : -5deg;
         font-family: "Impact", sans-serif;
         font-size: 1.25em;
         font-weight: lighter;
+        width: 100%;
 
-        .weapon-stats {
+        .header-stats {
+            width: 100%;
+
+            .header-stat-left {
+                float: left;
+                text-align: left;
+            }
+
+            .header-stat-right {
+                float: right;
+                text-align: right;
+            }
+        }
+
+        .body-stats {
             background: rgba(0, 0, 0, 0.15);
             background: -webkit-radial-gradient(rbga(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
             background: -moz-radial-gradient(rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
@@ -55,24 +70,22 @@ $text-slant : -5deg;
         }
 
         .stat {
-            width: 100%;
             text-shadow: 2px 2px black;
             
             .stat-name {
                 margin-right: 0.5em;
                 color: white;
-                text-align: left;
             }
 
             .stat-value {
                 color: #F1FF24;
-                font-size: 0.95em;
-                text-align: right;
+                font-size: 0.975em;
             }
         }
     }
 
     .weapons {
+        height: 5em;
         max-height: 5em;
         width: 100%;
         margin-top: 10%;
@@ -80,7 +93,7 @@ $text-slant : -5deg;
         border-color: black; 
         list-style-type: none;
         overflow-x: hidden;
-        overflow-y: auto;
+        overflow-y: scroll;
         
         .weapon {
             background: rgba(0, 0, 0, 0.5);
