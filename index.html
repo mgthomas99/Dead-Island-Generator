@@ -54,22 +54,6 @@
         </center>
 
         <script type="text/javascript" src="./node_modules/systemjs/dist/system.js"></script>
-        <script type="text/javascript" src="./node_modules/typescript/lib/typescript.js"></script>
-        <script type="text/javascript">
-            System.config({
-                transpiler: "typescript",
-                packages: {
-                    "dist": {
-                        defaultExtension: "js"
-                    },
-                    "src": {
-                        defaultExtension: "ts"
-                    }
-                }
-            });
-        </script>
-        <script type="text/javascript" src="./dist/element-hook.js"></script>
-        <script type="text/javascript" src="./dist/util.js"></script>
-        <script type="text/javascript" src="./dist/index.js"></script>
+        <script type="text/javascript" src="./dist/index.js" defer></script>
     </body>
 </html>

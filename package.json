@@ -8,7 +8,7 @@
     "Game"
   ],
   "homepage": "https://github.com/mgthomas99/Dead-Island-Generator#readme",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "concurrently \"node-sass src/**/* -o dist\" \"tsc\"",
     "di-c": "lite-server"
