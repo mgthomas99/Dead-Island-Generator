@@ -1,4 +1,6 @@
 import {GenericArrayUtils as ArrayUtils} from "./../util";
+import {bind, attrib} from "./../element-hook";
+import {inv, game} from "./inv";
 
 export class Weapon {
 
