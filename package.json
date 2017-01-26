@@ -1,0 +1,33 @@
+{
+  "name": "di-creator",
+  "version": "1.0.0",
+  "description": "Dead Island weapon generator!",
+  "keywords": [
+    "Dead",
+    "Island",
+    "Game"
+  ],
+  "homepage": "https://github.com/mgthomas99/Dead-Island-Generator#readme",
+  "main": "index.js",
+  "scripts": {
+    "build": "concurrently \"node-sass src/**/* -o dist\" \"tsc\"",
+    "di-c": "lite-server"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "node-sass": "^4.3.0",
+    "typescript": "^2.1.5"
+  },
+  "dependencies": {
+    "systemjs": "^0.20.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgthomas99/Dead-Island-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mgthomas99/Dead-Island-Generator/issues"
+  },
+  "license": "GNU General Public License, Version 2"
+}

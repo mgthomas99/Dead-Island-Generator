@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "target": "es5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "sourceMap": false,
+
+        "allowJs": true,
+        "outDir": "./dist"
+    }
+}

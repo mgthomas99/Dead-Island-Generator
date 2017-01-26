@@ -1,5 +1,5 @@
 $url-board : url("./../../res/board.png");
-$inv-bg-color-border : rgba(0, 130, 0, 0.1);
+$inv-bg-color-border : rgba(0, 75, 0, 0.75);
 $inv-bg-color : rgba(0, 130, 0, 0.75);
 $text-slant : -5deg;
 
@@ -12,10 +12,11 @@ $text-slant : -5deg;
     cursor: pointer;
     display: inline-block;
     font-family: "Dead Island", sans-serif;
-    font-size: 4em;
+    font-size: 4.5em;
     font-weight: bold;
     text-shadow: 10px 10px black;
     user-select: none;
+    white-space: nowrap;
 }
 
 .inventory {
@@ -45,19 +46,6 @@ $text-slant : -5deg;
         font-size: 1.25em;
         font-weight: lighter;
 
-        img {
-            float: left;
-        }
-
-        .header-stat-left {
-            float: left;
-            text-align: left;
-        }
-
-        .header-stat-right {
-            text-align: right;
-        }
-
         .weapon-stats {
             background: rgba(0, 0, 0, 0.15);
             background: -webkit-radial-gradient(rbga(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0));
@@ -85,8 +73,7 @@ $text-slant : -5deg;
     }
 
     .weapons {
-        height: 100px;
-        max-height: 100px;
+        max-height: 5em;
         width: 100%;
         margin-top: 10%;
 
