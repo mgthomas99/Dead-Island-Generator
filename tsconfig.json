@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
+        "moduleResolution": "node",
         "module": "system",
         "target": "es5",
-        "removeComments": true,
-        "sourceMap": false,
 
-        "allowJs": true,
         "outDir": "./dist"
     }
 }
