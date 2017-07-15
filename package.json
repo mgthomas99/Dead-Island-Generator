@@ -11,9 +11,10 @@
   "homepage": "https://github.com/mgthomas99/Dead-Island-Generator#readme",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "concurrently \"node-sass src/**/* -o dist\" \"tsc\"",
-    "server": "cross-env node dist/www/di-server.js",
-    "di-c": "http-server \"./\" -a 0.0.0.0 -p 8080"
+    "build:css": "node-sass src/**/* --output ./public/style",
+    "build:js": "tsc",
+    "build": "concurrently \"npm run build:css\" \"npm run build:js\"",
+    "di-c": "cross-env node dist/www/di-server.js"
   },
   "devDependencies": {
     "@types/express": "^4.0.36",
