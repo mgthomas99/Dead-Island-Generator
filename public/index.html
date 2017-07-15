@@ -9,9 +9,9 @@
         <meta name="viewport" value="width=device-width, initial-scale=1.0">
         <title>Dead Island Generator</title>
         <link rel="shortcut icon" href="./favicon.ico">
-        <link type="text/css" rel="stylesheet" href="./dist/style/index.css">
-        <link type="text/css" rel="stylesheet" href="./dist/style/inventory.css">
-        <link type="text/css" rel="stylesheet" href="./dist/style/tooltip.css">
+        <link type="text/css" rel="stylesheet" href="style/index.css">
+        <link type="text/css" rel="stylesheet" href="style/inventory.css">
+        <link type="text/css" rel="stylesheet" href="style/tooltip.css">
     </head>
 
     <body>
@@ -54,7 +54,13 @@
             </div>
         </center>
 
-        <script type="text/javascript" src="./node_modules/systemjs/dist/system.js"></script>
-        <script type="text/javascript" src="./dist/index.js" defer></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript">
+            setInterval(() => {
+                getWeapon()
+                        .catch(err => { throw err; })
+                        .then(weapon => document.getElementById("weapon-name").innerHTML = weapon)
+            }, 1000);
+        </script>
     </body>
 </html>
