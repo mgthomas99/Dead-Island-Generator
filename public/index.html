@@ -19,8 +19,6 @@
             <div class="inventory" id="inventory">
                 <center>
                     <div class="attrib-weapon-color" id="weapon">
-                        <span class="value-weapon-prefix" id="weapon-prefix"></span>
-                        <span class="value-weapon-name" id="weapon-name"></span>
                     </div>
                 </center>
                 <div class="statbox-separator"></div>
@@ -42,25 +40,11 @@
                             </div>
                             <br />
                         </div>
-                        <div class="body-stats">
-                            <img src="" />
-                            <span class="stat">
-                                <span class="stat-name">Weapon name: </span>
-                                <span class="value-weapon-name stat-value"></span>
-                            </span>
-                        </div>
                     </div>
                 </div>
             </div>
         </center>
 
         <script type="text/javascript" src="index.js"></script>
-        <script type="text/javascript">
-            setInterval(() => {
-                getWeapon()
-                        .catch(err => { throw err; })
-                        .then(weapon => document.getElementById("weapon-name").innerHTML = weapon)
-            }, 1000);
-        </script>
     </body>
 </html>

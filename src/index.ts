@@ -2,6 +2,10 @@ import { Application, Request, Response } from "express";
 import * as express from "express"
 import * as path from "path";
 
+import { WeaponClass } from "./item/weapon/weapon-class";
+import { WeaponType } from "./item/weapon/weapon-type";
+import { Weapon } from "./item/weapon/weapon";
+
 const port = process.env.PORT || 8080;
 const app = express();
 
@@ -12,7 +16,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 app.get("/weapon", (req: Request, res: Response) => {
-	res.send("Machete Mk. II");
+	res.send(Weapon.generate());
 });
 
 app.listen(port);
