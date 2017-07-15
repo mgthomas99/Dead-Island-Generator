@@ -8,13 +8,13 @@
     "Island",
     "Game"
   ],
-  "homepage": "https://github.com/mgthomas99/Dead-Island-Generator#readme",
+  "homepage": "https://github.com/mgthomas99/Dead-Island-Generator",
   "main": "./dist/index.js",
   "scripts": {
     "build:css": "node-sass src/**/* --output ./public/style",
     "build:js": "tsc",
     "build": "concurrently \"npm run build:css\" \"npm run build:js\"",
-    "di-c": "cross-env node dist/www/di-server.js"
+    "di-c": "cross-env node dist/index.js"
   },
   "devDependencies": {
     "@types/express": "^4.0.36",
