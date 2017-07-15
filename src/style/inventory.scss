@@ -9,6 +9,7 @@ $text-slant : -5deg;
 
     background-image: $url-board;
     background-size: cover;
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-family: "Dead Island", sans-serif;
@@ -91,6 +92,7 @@ $text-slant : -5deg;
         margin-top: 10%;
 
         border-color: black; 
+        color: white;
         list-style-type: none;
         overflow-x: hidden;
         overflow-y: scroll;
