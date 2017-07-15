@@ -11,7 +11,7 @@
   "homepage": "https://github.com/mgthomas99/Dead-Island-Generator",
   "main": "./dist/index.js",
   "scripts": {
-    "build:css": "node-sass src/**/* --output ./public/style",
+    "build:css": "node-sass src/style -o public/style/",
     "build:js": "tsc",
     "build": "concurrently \"npm run build:css\" \"npm run build:js\"",
     "di-c": "cross-env node dist/index.js"
