@@ -2,10 +2,10 @@ import { Weapon } from "./weapon/weapon";
 
 export class Inventory {
 
-	public weapons: Weapon[];
+    public weapons: Weapon[];
 
-	public constructor() {
-		this.weapons = [];
-	}
+    public constructor() {
+        this.weapons = [];
+    }
 
 }

@@ -13,7 +13,7 @@ export class Weapon {
     public type: WeaponType;
     public prefix: string;
     public name: string;
-    
+
     public get fullName(): string {
         return this.prefix + " " + this.name;
     }

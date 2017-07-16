@@ -1,9 +1,9 @@
 
 export enum WeaponClass {
-	Common,
-	Uncommon,
-	Rare,
-	Exceptional,
-	Legendary,
-	Unique
+    Common,
+    Uncommon,
+    Rare,
+    Exceptional,
+    Legendary,
+    Unique
 }

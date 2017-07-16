@@ -1,6 +1,6 @@
 
 export enum WeaponType {
-	Blunt,
-	Firearm,
-	Sharp
+    Blunt,
+    Firearm,
+    Sharp
 }
